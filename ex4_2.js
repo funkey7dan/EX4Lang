@@ -1,11 +1,11 @@
 function memoize(f) {
-    const cache = new Map();
+    let cache = {};
     return function(x) {
-      if (cache.has(x)) {
-        return cache.get(x);
+      if (cache[x]) {
+        return cache[x];
       }
       const result = f(x);
-      cache.set(x, result);
+      cache[x]=result;
       return result;
     }
   }
