@@ -5,7 +5,7 @@ is_prime(A) :- A>1,(is_mod(A,2)),is_prime_helper(A,3).
 
 goldbach(N, []) :- N < 2;not(mod(N,2) =:= 0).
 goldbach(N, [H|T]) :-
-    between(3, N, H),
+    between(2, N, H),
     T is N - H,
     is_prime(H),
     is_prime(T).
