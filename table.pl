@@ -11,8 +11,7 @@ bool(true).
 bool(fail).
 
 table(A, B, C) :-bool(A),bool(B),write(A),write(' '),write(B),write(' '),eval_boolean(C,D),write(D),nl,fail.
-%table(A,B, and(A, (or (A, not(B))).
-%print_table(A,B,C) :- print(A," "), print(B), print(C), nl.
+table(_, _, _).
 
 
 
