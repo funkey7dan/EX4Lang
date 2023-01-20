@@ -66,6 +66,7 @@ rm temp.pl
 echo -n "number of error: " >> res
 diff -y --suppress-common-lines test.txt results  | wc -l >> res
 cat res
+cat results
 rm res
 rm results
 
