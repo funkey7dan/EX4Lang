@@ -7,7 +7,7 @@ is_prime(2).
 is_prime(A) :- A>1,(is_mod(A,2)),is_prime_helper(A,3).
 
 goldbach(N, []) :- N < 2,!.
-goldbach(N, [H|T]) :-
+goldbach(N, [H,T]) :-
     N1 is N/2,
     range(2, N1, H),
     T is N - H,

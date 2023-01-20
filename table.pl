@@ -10,7 +10,7 @@ eval_boolean(_, fail).
 bool(true).
 bool(fail).
 
-table(A, B, C) :-bool(A),bool(B),write(A),write(' '),write(B),write(' '),eval_boolean(C,D),write(D),nl,fail.
+table(A, B, C) :-bool(A),bool(B),write(A),write('  '),write(B),write('  '),eval_boolean(C,D),write(D),nl,fail.
 table(_, _, _).
 
 
